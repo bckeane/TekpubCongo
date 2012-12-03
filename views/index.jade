@@ -3,3 +3,15 @@ extends layout
 block content
   
   h1=title
+
+  .row
+    ul#breadcrumbs.breadcrumb.span12
+
+  script(src="/javascripts/congo/congo.js")
+  script(src="/javascripts/congo/nav.js")
+
+  script
+    $(function(){
+      Congo.init();
+    });
+
